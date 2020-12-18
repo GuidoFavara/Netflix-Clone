@@ -10,7 +10,7 @@ export const Frame = styled.div`
 `;
 
 export const Inner = styled.div`
-  display: flex;
+  display: block;
   padding: 70px 45px;
   flex-direction: column;
   max-width: 815px;
@@ -26,7 +26,7 @@ export const Title = styled.h1`
   text-align: center;
 
   @media (max-width: 600px) {
-    font-size: 35px;
+    font-size: 26px;
   }
 `;
 
@@ -34,11 +34,14 @@ export const Item = styled.div`
   color: white;
   margin-bottom: 10px;
   margin: auto;
-  max-width: 670px;
+  max-width: 728px;
   width: 100%;
 
   &:first-of-type {
     margin-top: 3em;
+  }
+  &:last-of-type {
+    margin-bottom: 0;
   }
 `;
 
@@ -64,7 +67,7 @@ export const Header = styled.div`
   }
 
   @media (max-width: 600px) {
-    font-size: 16px;
+    font-size: 18px;
   }
 `;
 
@@ -79,6 +82,19 @@ export const Body = styled.div`
   white-space: pre-wrap;
   user-select: none;
 
+  &.closed {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  }
+  &.open {
+    max-height: 1200px;
+    transition: max-height 0.25s cubic-bezier(0.5, 0, 0.1, 1);
+  }
+  span {
+    display: block;
+    padding: 0.8em 2.2em 0.8em 1.2em;
+  }
   @media (max-width: 600px) {
     font-size: 16px;
     line-height: 22px;
