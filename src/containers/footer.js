@@ -8,36 +8,36 @@ export function FooterContainer() {
       <Footer.Break />
       <Footer.Row>
         <Footer.Column>
-          <Footer.Link href="#">FAQ</Footer.Link>
-          <Footer.Link href="#">Investor Relations</Footer.Link>
-          <Footer.Link href="#">Ways to Watch</Footer.Link>
-          <Footer.Link href="#">Corporate Information</Footer.Link>
-          <Footer.Link href="#">Netflix Originals</Footer.Link>
+          <Footer.Link href="#">Preguntas frecuentes</Footer.Link>
+          <Footer.Link href="#">Relacion con inversionistas</Footer.Link>
+          <Footer.Link href="#">Formas de ver</Footer.Link>
+          <Footer.Link href="#">Informacion Corporativa</Footer.Link>
+          <Footer.Link href="#">Originales de Netflix</Footer.Link>
         </Footer.Column>
 
         <Footer.Column>
-          <Footer.Link href="#">Help Centre</Footer.Link>
-          <Footer.Link href="#">Jobs</Footer.Link>
-          <Footer.Link href="#">Terms of Use</Footer.Link>
-          <Footer.Link href="#">Contact Us</Footer.Link>
+          <Footer.Link href="#">Centro de ayuda</Footer.Link>
+          <Footer.Link href="#">Empleo</Footer.Link>
+          <Footer.Link href="#">Términos de uso</Footer.Link>
+          <Footer.Link href="#">Contáctanos/Footer.Link>
         </Footer.Column>
 
         <Footer.Column>
-          <Footer.Link href="#">Account</Footer.Link>
-          <Footer.Link href="#">Redeem gift cards</Footer.Link>
-          <Footer.Link href="#">Privacy</Footer.Link>
-          <Footer.Link href="#">Speed Test</Footer.Link>
+          <Footer.Link href="#">Cuenta</Footer.Link>
+          <Footer.Link href="#">Canjear Gif Card</Footer.Link>
+          <Footer.Link href="#">Privacidad</Footer.Link>
+          <Footer.Link href="#">Prueba de velocidad</Footer.Link>
         </Footer.Column>
 
         <Footer.Column>
-          <Footer.Link href="#">Media Centre</Footer.Link>
-          <Footer.Link href="#">Buy gift cards</Footer.Link>
-          <Footer.Link href="#">Cookie Preferences</Footer.Link>
-          <Footer.Link href="#">Legal Notices</Footer.Link>
+          <Footer.Link href="#">Prensa</Footer.Link>
+          <Footer.Link href="#">Comprar Gif Card</Footer.Link>
+          <Footer.Link href="#">Preferencias de cookies</Footer.Link>
+          <Footer.Link href="#">Avisos legales</Footer.Link>
         </Footer.Column>
       </Footer.Row>
       <Footer.Break />
-      <Footer.Text>Netflix United Kingdom</Footer.Text>
+      <Footer.Text>Netflix Argentina</Footer.Text>
     </Footer>
   );
 }
