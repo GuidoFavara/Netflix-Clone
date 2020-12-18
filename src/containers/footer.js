@@ -19,7 +19,7 @@ export function FooterContainer() {
           <Footer.Link href="#">Centro de ayuda</Footer.Link>
           <Footer.Link href="#">Empleo</Footer.Link>
           <Footer.Link href="#">Términos de uso</Footer.Link>
-          <Footer.Link href="#">Contáctanos/Footer.Link>
+          <Footer.Link href="#">Contáctanos</Footer.Link>
         </Footer.Column>
 
         <Footer.Column>
