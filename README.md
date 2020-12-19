@@ -26,5 +26,5 @@ Estoy desarrollandolo, todavia no esta listo.
 Un preview por ahora solo landing page con faqs accordion: Falta armar todo el ReadMe
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/GuidoFavara/Netflix-Clone/master/FirstPreview.jpg" />
+  <img src="https://github.com/GuidoFavara/Netflix-Clone/blob/master/FirstPreview.png?raw=true />
 </div>
