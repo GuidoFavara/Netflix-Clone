@@ -16,8 +16,6 @@ Estoy desarrollandolo, todavia no esta listo.
   <li><a href="https://styled-components.com/">Styled Components</a></li>
   <li><a href="https://firebase.google.com/">FireBase</a></li>
 <li><a href="https://babeljs.io/">Babel Js</a></li>
-</ul>
-
 <li><a href="https://babeljs.io/">Fuse Js</a></li>
 </ul>
 
