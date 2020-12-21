@@ -19,7 +19,7 @@ Estoy desarrollandolo, todavia no esta listo.
 <li><a href="https://babeljs.io/">Fuse Js</a></li>
 </ul>
 
-1° Step Scraping Netflix Original Web to get al elements and plain text
+1° Step Scraping Netflix Original Web to get all the elements and plain text
 
 Un preview por ahora solo landing page con faqs accordion: Falta armar todo el ReadMe
 
