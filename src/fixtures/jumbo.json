@@ -1,10 +1,10 @@
 [
   {
     "id": 1,
-    "title": "Disfrutá en tu tele.",
+    "title": "Disfrutá en tu TV.",
     "subTitle": "Mirá en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.",
     "image": "/images/misc/home-tv.jpg",
-    "alt": "Tiger King on Netflix",
+    "alt": "Set it Up",
     "direction": "row"
   },
   {
@@ -20,7 +20,7 @@
     "title": "Disfrutá donde quieras.",
     "subTitle": "Películas y series ilimitadas en tu teléfono, tablet, computadora y tele sin costo extra.",
     "image": "/images/misc/home-imac.jpg",
-    "alt": "Money Heist on Netflix",
+    "alt": "La serie de la mascarita esa",
     "direction": "row"
   }
 ]
