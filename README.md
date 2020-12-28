@@ -14,6 +14,7 @@ Estoy desarrollandolo, todavia no esta listo.
 - [x] Firebase
 - [ ] LogIn 
 - [ ] Auth
+- [ ] Display Movies
 
 ## 🛠️ Technologies
 
