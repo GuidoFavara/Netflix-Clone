@@ -21,7 +21,7 @@ Estoy desarrollandolo, todavia no esta listo.
 <ul>
   <li><a href="https://reactjs.org/">React</a></li>
   <li><a href="https://styled-components.com/">Styled Components</a></li>
-  <li><a href="https://firebase.google.com/">FireBase</a></li>
+  <li><a href="https://firebase.google.com/">Firebase</a></li>
 <li><a href="https://babeljs.io/">Babel Js</a></li>
 <li><a href="https://fusejs.io/">Fuse Js</a></li>
 </ul>
