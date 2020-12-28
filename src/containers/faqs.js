@@ -14,13 +14,12 @@ export function FaqsContainer() {
         </Accordion.Item>
       ))}
       <Accordion.Item />
-
+      <OptForm.Text>
+        ¿Quieres ver Netflix ya? Ingresa tu email para crear una cuenta o reiniciar tu membresía de Netflix.
+      </OptForm.Text>
       <OptForm>
         <OptForm.Input placeholder="Email" />
-        <OptForm.Button>COMENZÁ YA</OptForm.Button>
-        <OptForm.Text>
-          ¿Querés mirar Netflix ya? Ingresá tu email para crear una cuenta o reiniciar tu membresía de Netflix.
-        </OptForm.Text>
+        <OptForm.Button>COMIENZA YA</OptForm.Button>
       </OptForm>
     </Accordion>
   );

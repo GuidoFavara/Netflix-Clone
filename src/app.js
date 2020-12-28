@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import * as ROUTES from './constants/routes'; /* Lo voy a pasar al path */
 import { Home, Browse, Signin, Signup } from './pages';
 
-export default function App() {
+export function App() {
   return (
     <Router>
       <Route exact path="/browse">

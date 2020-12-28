@@ -190,12 +190,12 @@ export const Text = styled.p`
   line-height: normal;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
 `;
-
+/* Sacado de Netflix original */
 export const Logo = styled.img`
   height: 36px;
   width: 134px;
   margin-right: 40px;
-  @media (min-width: 1449px) {
+  @media (min-width: 1449px) {   
     height: 45px;
     width: 167px;
   }
