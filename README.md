@@ -32,3 +32,11 @@ Fist Preview
 <div align="center">
   <img src="https://github.com/GuidoFavara/Netflix-Clone/blob/master/Preview.png?raw=true"/>
 </div>
+
+## Roadmap
+- [ ] ads
+- [x] das
+- [x] das
+- [ ] das
+- [ ] ads
+- [ ] asd
