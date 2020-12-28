@@ -26,10 +26,6 @@ Estoy desarrollandolo, todavia no esta listo.
 <li><a href="https://fusejs.io/">Fuse Js</a></li>
 </ul>
 
-1° Step Scraping Netflix Original Web to get all the elements and plain text
-
-Un preview por ahora solo landing page con faqs accordion: Falta armar todo el ReadMe
-
 New Preview 28/12 Langind Page Complete
 <div align="center">
   <img src="https://github.com/GuidoFavara/Netflix-Clone/blob/master/Preview 28-12.png?raw=true"/>
