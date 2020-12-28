@@ -23,6 +23,12 @@ Estoy desarrollandolo, todavia no esta listo.
 
 Un preview por ahora solo landing page con faqs accordion: Falta armar todo el ReadMe
 
+New Preview 28/12 Langind Page Complete
+<div align="center">
+  <img src="https://github.com/GuidoFavara/Netflix-Clone/blob/master/Preview 28-12.png?raw=true"/>
+</div>
+
+Fist Preview
 <div align="center">
   <img src="https://github.com/GuidoFavara/Netflix-Clone/blob/master/Preview.png?raw=true"/>
 </div>
