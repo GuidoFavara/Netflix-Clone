@@ -13,7 +13,7 @@ export const Container = styled.div`  /* {div completo del form} */
   }
 `;
 
-export const Input = styled.input` /* {email bot} */
+export const Input = styled.input` /* {email box} */
   max-width: 450px;
   width: 100%;
   border: 0;

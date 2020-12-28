@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "title": "Disfrutá en tu TV.",
-    "subTitle": "Mirá en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.",
+    "title": "Disfruta en tu TV.",
+    "subTitle": "Ve en smart TV, PlayStation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.",
     "image": "/images/misc/home-tv.jpg",
     "alt": "Set it Up",
     "direction": "row"
@@ -10,15 +10,15 @@
   {
     "id": 2,
     "title": "Descargá tus series para mirarlas offline.",
-    "subTitle": "Guardá tu contenido favorito y tené siempre algo para mirar.",
+    "subTitle": "Guarda tu contenido favorito y ten siempre algo para ver.",
     "image": "/images/misc/home-mobile.jpg",
     "alt": "Watch on mobile",
     "direction": "row-reverse"
   },
   {
     "id": 3,
-    "title": "Disfrutá donde quieras.",
-    "subTitle": "Películas y series ilimitadas en tu teléfono, tablet, computadora y tele sin costo extra.",
+    "title": "Disfruta donde quieras.",
+    "subTitle": "Películas y series ilimitadas en tu teléfono, tablet, computadora y TV sin costo extra.",
     "image": "/images/misc/home-imac.jpg",
     "alt": "La serie de la mascarita esa",
     "direction": "row"
