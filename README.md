@@ -9,6 +9,12 @@ One of my biggest proyect so far
 
 Estoy desarrollandolo, todavia no esta listo. 
 
+## Roadmap
+- [x] Landing Page
+- [x] Firebase
+- [ ] LogIn 
+- [ ] Auth
+
 ## 🛠️ Technologies
 
 <ul>
@@ -33,10 +39,3 @@ Fist Preview
   <img src="https://github.com/GuidoFavara/Netflix-Clone/blob/master/Preview.png?raw=true"/>
 </div>
 
-## Roadmap
-- [ ] ads
-- [x] das
-- [x] das
-- [ ] das
-- [ ] ads
-- [ ] asd
