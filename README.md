@@ -2,7 +2,10 @@
 
 <p align="center">A Netflix Clone very presice with Auth & Firebase backend</p>
 
+
 ## 🚧 Under Construction
+
+
 Im Working on this, not ready yet
 
 One of my biggest proyect so far
@@ -10,15 +13,19 @@ One of my biggest proyect so far
 Estoy desarrollandolo, todavia no esta listo. 
 
 ## 🚧 Roadmap
+
+
 - [x] Faqs
 - [x] Landing Page
 - [x] Pages
 - [x] Firebase
-- [x] SignIn 99% Complete
-- [x] SignUp in process
-- [ ] LogIn 
-- [ ] Auth
+- [x] SignIn
+- [x] SignUp
+- [x] Auth
 - [ ] Display Movies
+- [ ] Debug
+- [ ] Deploy
+- [ ] Conseguir un trabajo
 
 ## 🛠️ Technologies
 
