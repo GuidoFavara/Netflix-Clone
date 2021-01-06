@@ -4,12 +4,12 @@ import { Footer } from '../components';
 export function FooterContainer() {
   return (
     <Footer>
-      <Footer.Title>¿Preguntas? Llamá al 800-345-1375</Footer.Title>
+      <Footer.Title>¿Preguntas? Llama al 800-345-1375</Footer.Title>
       <Footer.Break />
       <Footer.Row>
         <Footer.Column>
           <Footer.Link href="#">Preguntas frecuentes</Footer.Link>
-          <Footer.Link href="#">Relacion con inversionistas</Footer.Link>
+          <Footer.Link href="#">Relaciones con inversionistas</Footer.Link>
           <Footer.Link href="#">Formas de ver</Footer.Link>
           <Footer.Link href="#">Informacion Corporativa</Footer.Link>
           <Footer.Link href="#">Originales de Netflix</Footer.Link>

@@ -14,7 +14,8 @@ Estoy desarrollandolo, todavia no esta listo.
 - [x] Landing Page
 - [x] Pages
 - [x] Firebase
-- [ ] SignIn In Process
+- [x] SignIn 99% Complete
+- [x] SignUp in process
 - [ ] LogIn 
 - [ ] Auth
 - [ ] Display Movies
