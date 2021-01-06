@@ -10,8 +10,11 @@ One of my biggest proyect so far
 Estoy desarrollandolo, todavia no esta listo. 
 
 ## 🚧 Roadmap
+- [x] Faqs
 - [x] Landing Page
+- [x] Pages
 - [x] Firebase
+- [ ] SignIn In Process
 - [ ] LogIn 
 - [ ] Auth
 - [ ] Display Movies
