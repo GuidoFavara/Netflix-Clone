@@ -38,6 +38,7 @@ export function FooterContainer() {
       </Footer.Row>
       <Footer.Break />
       <Footer.Text>Netflix Argentina</Footer.Text>
+      <Footer.Text>Desarrollado por Guido Favara</Footer.Text>
     </Footer>
   );
 }
