@@ -68,7 +68,7 @@ export default function SignUp() {
           </Form.Base>
 
           <Form.Text>
-            Ya estas registrado? <Form.Link to="/signin">Sign in now.</Form.Link>
+            Ya estas registrado? <Form.Link to="/signin">Ingresá.</Form.Link>
           </Form.Text>
           <Form.TextSmall>
             Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot. Más info.
