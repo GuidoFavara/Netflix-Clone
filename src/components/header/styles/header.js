@@ -1,13 +1,11 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable import/no-unresolved */
 import styled from 'styled-components/macro';
 import { Link as ReachRouterLink } from 'react-router-dom';
 
 export const Background = styled.div`
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)), url(${({ src }) => (src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg')}) top left / cover
-    no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.35)),
+    url(${({ src }) => (src ? `../images/misc/${src}.jpg` : '../images/misc/home-bg.jpg')}) top left / cover no-repeat;
   @media (max-width: 1100px) {
     ${({ dontShowOnSmallViewPort }) => dontShowOnSmallViewPort && `background: none;`}
   }
@@ -190,12 +188,12 @@ export const Text = styled.p`
   line-height: normal;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.45);
 `;
-/* Sacado de Netflix original */
+
 export const Logo = styled.img`
   height: 36px;
   width: 134px;
   margin-right: 40px;
-  @media (min-width: 1449px) {   
+  @media (min-width: 1449px) {
     height: 45px;
     width: 167px;
   }
