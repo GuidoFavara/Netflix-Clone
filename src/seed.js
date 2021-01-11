@@ -12,7 +12,7 @@ export function seedDatabase(firebase) {
 
   /* Series
     ============================================ */
-  // Documentaries
+  // Documentales
   firebase.firestore().collection('series').add({
     id: getUUID(),
     title: 'Tiger King',
@@ -31,7 +31,7 @@ export function seedDatabase(firebase) {
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Citizenfour',
+    title: 'Ciudadano',
     description:
       'Citizenfour is a 2014 documentary film directed by Laura Poitras, concerning Edward Snowden and the NSA spying scandal.',
     genre: 'documentaries',
@@ -57,7 +57,7 @@ export function seedDatabase(firebase) {
     slug: 'man-on-wire',
   });
 
-  // Comedies
+  // Comedias
   firebase.firestore().collection('series').add({
     id: getUUID(),
     title: 'The Office',
@@ -104,7 +104,7 @@ export function seedDatabase(firebase) {
     slug: 'south-park',
   });
 
-  // Children
+  // Infantiles
   firebase.firestore().collection('series').add({
     id: getUUID(),
     title: 'Peppa Pig',
@@ -151,7 +151,7 @@ export function seedDatabase(firebase) {
     slug: 'spongebob',
   });
 
-  // Crime
+  // Crimen
   firebase.firestore().collection('series').add({
     id: getUUID(),
     title: 'Making a Murderer',
@@ -198,7 +198,7 @@ export function seedDatabase(firebase) {
     slug: 'the-staircase',
   });
 
-  // Feel-good
+  // Sentise bien
   firebase.firestore().collection('series').add({
     id: getUUID(),
     title: 'Good Will Hunting',
@@ -245,7 +245,7 @@ export function seedDatabase(firebase) {
     slug: 'school-of-rock',
   });
 
-  /* Films
+  /* Películas
     ============================================ */
   // Drama
   firebase.firestore().collection('films').add({
@@ -294,7 +294,7 @@ export function seedDatabase(firebase) {
     slug: 'the-social-network',
   });
 
-  // Suspense
+  // Suspenso
   firebase.firestore().collection('films').add({
     id: getUUID(),
     title: 'Shutter Island',
@@ -341,7 +341,7 @@ export function seedDatabase(firebase) {
     slug: 'zodiac',
   });
 
-  // Children
+  // Infantiles
   firebase.firestore().collection('films').add({
     id: getUUID(),
     title: 'Hotel Transylvania',
@@ -388,7 +388,7 @@ export function seedDatabase(firebase) {
     slug: 'up',
   });
 
-  // Thriller
+  // Suspenso
   firebase.firestore().collection('films').add({
     id: getUUID(),
     title: 'Joker',

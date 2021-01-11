@@ -16,6 +16,6 @@ const config = {
 
 const firebase = Firebase.initializeApp(config);
 
-// seedDatabase(firebase); si habilito puedo duplicar la database 
+// seedDatabase(firebase); // si habilito puedo duplicar la database 
 
 export { firebase };

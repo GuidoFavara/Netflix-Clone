@@ -2,23 +2,23 @@ export default function selectionFilter({ series, films }) {
   return {
     series: [
       {
-        title: 'Documentaries',
+        title: 'Documentales',
         data: series.filter((item) => item.genre === 'documentaries'),
       },
       {
-        title: 'Comedies',
+        title: 'Comedias',
         data: series.filter((item) => item.genre === 'comedies'),
       },
       {
-        title: 'Children',
+        title: 'Infantiles',
         data: series.filter((item) => item.genre === 'children'),
       },
       {
-        title: 'Crime',
+        title: 'Crimen',
         data: series.filter((item) => item.genre === 'crime'),
       },
       {
-        title: 'Feel Good',
+        title: 'Sentirse bien',
         data: series.filter((item) => item.genre === 'feel-good'),
       },
     ],
@@ -28,15 +28,15 @@ export default function selectionFilter({ series, films }) {
         data: series.filter((item) => item.genre === 'drama'),
       },
       {
-        title: 'thriller',
+        title: 'Suspenso',
         data: series.filter((item) => item.genre === 'thriller'),
       },
       {
-        title: 'Children',
+        title: 'Infantiles',
         data: series.filter((item) => item.genre === 'children'),
       },
       {
-        title: 'Suspense',
+        title: 'Suspenso',
         data: series.filter((item) => item.genre === 'suspense'),
       },
       {
