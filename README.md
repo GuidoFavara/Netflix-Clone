@@ -2,6 +2,8 @@
 
 <p align="center">A Netflix Clone very presice with Auth & Firebase backend</p>
 
+[Demo](https://guido-net.netlify.app)
+
 
 ## 🚧 Under Construction
 
