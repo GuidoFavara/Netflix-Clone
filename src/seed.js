@@ -15,17 +15,18 @@ export function seedDatabase(firebase) {
   // Documentales
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Tiger King',
-    description: 'An exploration of big cat breeding and its bizarre underworld, populated by eccentric characters.',
-    genre: 'documentaries',
+    title: 'Rey Tigre',
+    description:
+      'Una exploración de la cría de grandes felinos y su extraño inframundo, poblado por personajes excéntricos.',
+    genero: 'documentales',
     maturity: '18',
     slug: 'tiger-king',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
     title: 'Amanda Knox',
-    description: 'Amanda Marie Knox is an American woman who spent almost four years in an Italian prison.',
-    genre: 'documentaries',
+    description: 'Amanda Marie Knox es una mujer estadounidense que pasó casi cuatro años en una prisión Italiana.',
+    genero: 'documentales',
     maturity: '12',
     slug: 'amanda-knox',
   });
@@ -33,26 +34,26 @@ export function seedDatabase(firebase) {
     id: getUUID(),
     title: 'Ciudadano',
     description:
-      'Citizenfour is a 2014 documentary film directed by Laura Poitras, concerning Edward Snowden and the NSA spying scandal.',
-    genre: 'documentaries',
+      'Citizenfour es una película documental de 2014 dirigida por Laura Poitras, sobre Edward Snowden y el escándalo de espionaje de la NSA.',
+    genero: 'documentales',
     maturity: '12',
     slug: 'citizenfour',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Super Size Me',
+    title: 'Super engórdame',
     description:
-      "Director Morgan Spurlock's social experiment in fast-food gastronomy sees him attempting to subsist uniquely on food from the McDonalds",
-    genre: 'documentaries',
+      'El experimento social del director Morgan Spurlock en gastronomía de comida rápida lo ve intentando subsistir únicamente con la comida de McDonalds.',
+    genero: 'documentales',
     maturity: '12',
     slug: 'super-size-me',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Man on Wire',
+    title: 'En la cuerda floja',
     description:
-      "Filmmaker James Marsh masterfully recreates high-wire daredevil Philippe Petit's 1974 stunt walking on a wire across the Twin Towers.",
-    genre: 'documentaries',
+      'El cineasta James Marsh recrea magistralmente el truco de 1974 del temerario Philippe Petit caminando sobre un cable a través de las Torres Gemelas.',
+    genero: 'documentales',
     maturity: '12',
     slug: 'man-on-wire',
   });
@@ -62,35 +63,35 @@ export function seedDatabase(firebase) {
     id: getUUID(),
     title: 'The Office',
     description:
-      'A motley group of office workers go through hilarious misadventures at the Scranton, Pennsylvania, branch of the Dunder Mifflin Paper Company.',
-    genre: 'comedies',
+      'Un variopinto grupo de oficinistas atraviesa divertidísimas desventuras en la sucursal de Scranton, Pensilvania, de Dunder Mifflin Paper Company.',
+    genero: 'comedias',
     maturity: '15',
     slug: 'the-office',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Arrested Development',
+    title: 'Sacrificios de familia',
     description:
-      'The Bluth family, once a prominent name in the business, loses everything after the head patriarch gets convicted for fraud.',
-    genre: 'comedies',
+      'La familia Bluth, que alguna vez fue un nombre prominente en el negocio, pierde todo después de que el patriarca principal es condenado por fraude.',
+    genero: 'comedias',
     maturity: '15',
     slug: 'arrested-development',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Curb Your Enthusiasm',
+    title: 'Controle su entusiasmo',
     description:
-      'Larry David, a famous television writer and producer, gets into various misadventures with his friends and celebrity colleagues in Los Angeles.',
-    genre: 'comedies',
+      'Larry David, un famoso escritor y productor de televisión, se mete en varias desventuras con sus amigos y colegas famosos en Los Ángeles.',
+    genero: 'comedias',
     maturity: '15',
     slug: 'curb-your-enthusiasm',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Family Guy',
+    title: 'Padre de Familia',
     description:
-      'Peter Griffin and his family of two teenagers, a smart dog, a devilish baby and his wife find themselves in some of the most hilarious scenarios.',
-    genre: 'comedies',
+      'Peter Griffin y su familia de dos adolescentes, un perro inteligente, un bebé diabólico y su esposa se encuentran en algunos de los escenarios más divertidos.',
+    genero: 'comedias',
     maturity: '15',
     slug: 'family-guy',
   });
@@ -98,8 +99,8 @@ export function seedDatabase(firebase) {
     id: getUUID(),
     title: 'South Park',
     description:
-      'Four young, schoolgoing boys, Stan Marsh, Kyle Broflovski, Eric Cartman and Kenny McCormick, who live in South Park set out on various adventures.',
-    genre: 'comedies',
+      'Cuatro chicos jóvenes que van a la escuela, Stan Marsh, Kyle Broflovski, Eric Cartman y Kenny McCormick, que viven en South Park, se embarcan en varias aventuras.',
+    genero: 'comedias',
     maturity: '15',
     slug: 'south-park',
   });
@@ -109,17 +110,17 @@ export function seedDatabase(firebase) {
     id: getUUID(),
     title: 'Peppa Pig',
     description:
-      'Peppa, an outgoing preschool pig, participates in many energetic activities. She learns something new every day and has a lot of fun with her family and friends.',
-    genre: 'children',
+      'Peppa, una cerdita preescolar extrovertida, participa en muchas actividades enérgicas. Ella aprende algo nuevo todos los días y se divierte mucho con su familia y amigos.',
+    genero: 'infantiles',
     maturity: '0',
     slug: 'peppa-pig',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Dora The Explorer',
+    title: 'Dora la exploradora',
     description:
-      'Dora, a seven-year-old girl of Latin American descent, embarks upon numerous adventures in the wilderness with her friend Boots, a monkey, and a variety of fun and useful tools.',
-    genre: 'children',
+      'Dora, una niña de siete años de ascendencia latinoamericana, se embarca en numerosas aventuras en el desierto con su amiga Boots, un mono y una variedad de herramientas divertidas y útiles.',
+    genero: 'infantiles',
     maturity: '0',
     slug: 'dora-the-explorer',
   });
@@ -127,8 +128,8 @@ export function seedDatabase(firebase) {
     id: getUUID(),
     title: 'PAW Patrol',
     description:
-      'Six brave puppies, captained by a tech-savvy ten-year-old boy, Ryder, work together to accomplish high-stakes rescue missions to safeguard the residents of the Adventure Bay community.',
-    genre: 'children',
+      'Seis valientes cachorros, capitaneados por Ryder, un niño de diez años experto en tecnología, trabajan juntos para cumplir misiones de rescate de alto riesgo para proteger a los residentes de la comunidad de Adventure Bay.',
+    genero: 'infantiles',
     maturity: '0',
     slug: 'paw-patrol',
   });
@@ -136,64 +137,64 @@ export function seedDatabase(firebase) {
     id: getUUID(),
     title: 'Arthur',
     description:
-      'Bespectacled aardvark Arthur Read demonstrates to kids how to deal with such childhood traumas and challenges as homework, teachers and bullies.',
-    genre: 'children',
+      'El oso hormiguero con anteojos Arthur Read demuestra a los niños cómo lidiar con traumas y desafíos de la niñez como la tarea, los maestros y los matones.',
+    genero: 'infantiles',
     maturity: '0',
     slug: 'arthur',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'SpongeBob',
+    title: 'Bob Esponja',
     description:
-      'A yellow sea sponge named SpongeBob SquarePants lives in the city of Bikini Bottom deep in the Pacific Ocean. ',
-    genre: 'children',
+      'Una esponja de mar amarilla llamada SpongeBob SquarePants vive en la ciudad de Fondo de Bikini en las profundidades del Océano Pacífico.',
+    genero: 'infantiles',
     maturity: '0',
     slug: 'spongebob',
   });
 
-  // Crimen
+  // crimen
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Making a Murderer',
+    title: 'Fabricando un asesino',
     description:
-      'Exonerated after spending nearly two decades in prison for a crime he did not commit, Steven Avery filed suit against Manitowoc County, Wis., and several individuals involved with his arrest.',
-    genre: 'crime',
+      'Exonerado después de pasar casi dos décadas en prisión por un crimenn que no cometió, Steven Avery presentó una demanda contra el condado de Manitowoc, Wisconsin, y varias personas involucradas en su arresto.',
+    genero: 'crimen',
     maturity: '18',
     slug: 'making-a-murderer',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Long Shot',
+    title: 'Ni en tus sueños',
     description:
-      'An innocent man is accused of murder, leading his attorney on a wild chase to confirm his alibi using raw footage from a television show.',
-    genre: 'crime',
+      'Un hombre inocente es acusado de asesinato, lo que lleva a su abogado a una persecución salvaje para confirmar su coartada utilizando imágenes sin procesar de un programa de televisión.',
+    genero: 'crimen',
     maturity: '18',
     slug: 'long-shot',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'The Confession Killer',
+    title: 'Asesino confieso',
     description:
-      'Henry Lee Lucas was an American convicted serial killer whose crimes spanned from 1960 to 1983. He was convicted of murdering eleven people and condemned to death for the murder of Debra Jackson, although his sentence would be commuted to life in prison in 1998.',
-    genre: 'crime',
+      'Henry Lee Lucas fue un asesino en serie convicto estadounidense cuyos crímenes abarcaron desde 1960 hasta 1983. Fue declarado culpable de asesinar a once personas y condenado a muerte por el asesinato de Debra Jackson, aunque su sentencia sería conmutada por cadena perpetua en 1998.',
+    genero: 'crimen',
     maturity: '18',
     slug: 'the-confession-killer',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'The Innocent Man',
+    title: 'El hombre inocente',
     description:
-      'Henry Lee Lucas was an American convicted serial killer whose crimes spanned from 1960 to 1983. He was convicted of murdering eleven people and condemned to death for the murder of Debra Jackson.',
-    genre: 'crime',
+      'Henry Lee Lucas fue un asesino en serie convicto estadounidense cuyos crímenes abarcaron desde 1960 hasta 1983. Fue declarado culpable de asesinar a una vez personas y condenado a muerte por el asesinato de Debra Jackson.',
+    genero: 'crimen',
     maturity: '18',
     slug: 'the-innocent-man',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'The Staircase',
+    title: 'El crimenn de la escalera',
     description:
-      "In 2001 novelist Michael Peterson's wife died, and he claimed she perished after falling down stairs at their home. The medical examiner, however, determined that she had been beaten with a weapon",
-    genre: 'crime',
+      'En 2001 murió la esposa del novelista Michael Peterson, quien afirmó que ella falleció después de caer por las escaleras en su casa. Sin embargo, el médico forense determinó que la habían golpeado con un arma.',
+    genero: 'crimen',
     maturity: '18',
     slug: 'the-staircase',
   });
@@ -201,10 +202,10 @@ export function seedDatabase(firebase) {
   // Sentise bien
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Good Will Hunting',
+    title: 'En busca del destino',
     description:
-      'Will Hunting, a genius in mathematics, solves all the difficult mathematical problems. When he faces an emotional crisis, he takes help from psychiatrist Dr Sean Maguireto, who helps him recover.',
-    genre: 'feel-good',
+      'Will Hunting, un genio de las matemáticas, resuelve todos los problemas matemáticos difíciles. Cuando se enfrenta a una crisis emocional, recibe la ayuda del psiquiatra Dr. Sean Maguireto, que lo ayuda a recuperarse.',
+    genero: 'sentirse-bien',
     maturity: '12',
     slug: 'good-will-hunting',
   });
@@ -212,8 +213,8 @@ export function seedDatabase(firebase) {
     id: getUUID(),
     title: 'Forrest Gump',
     description:
-      'Forrest Gump, a man with a low IQ, joins the army for service where he meets Dan and Bubba. However, he cannot stop thinking about his childhood sweetheart Jenny Curran, whose life is messed up.',
-    genre: 'feel-good',
+      'Forrest Gump, un hombre con un coeficiente intelectual bajo, se une al ejército para el servicio donde conoce a Dan y Bubba. Sin embargo, no puede dejar de pensar en su novia de la infancia Jenny Curran, cuya vida está arruinada.',
+    genero: 'sentirse-bien',
     maturity: '12',
     slug: 'forrest-gump',
   });
@@ -221,26 +222,26 @@ export function seedDatabase(firebase) {
     id: getUUID(),
     title: 'Juno',
     description:
-      "Social misfit Juno protects herself with a caustic wit, but her unplanned pregnancy has the teen getting more involved in the lives of her baby's adoptive parents than she expected.",
-    genre: 'feel-good',
+      'La inadaptada social Juno se protege a sí misma con un ingenio cáustico, pero su embarazo no planeado hace que la adolescente se involucre más en la vida de los padres adoptivos de su bebé de lo que esperaba.',
+    genero: 'sentirse-bien',
     maturity: '12',
     slug: 'juno',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'Midnight In Paris',
+    title: 'Medianoche en París',
     description:
-      'Gil arrives with his fiancee and her family in Paris for a vacation, even as he tries to finish his debut novel. He is beguiled by the city, which takes him to a time past, away from his fiancee.',
-    genre: 'feel-good',
+      'Gil llega con su prometida y su familia a París de vacaciones, mientras intenta terminar su primera novela. La ciudad lo seduce, lo que lo lleva a un tiempo pasado, lejos de su prometida.',
+    genero: 'sentirse-bien',
     maturity: '12',
     slug: 'midnight-in-paris',
   });
   firebase.firestore().collection('series').add({
     id: getUUID(),
-    title: 'School of Rock',
+    title: 'Escuela de Rock',
     description:
-      "Dewey Finn, an amateur rock enthusiast, slyly takes up his friend's substitute teacher's job. Bearing no qualifications for it, he instead starts training the students to form a band.",
-    genre: 'feel-good',
+      'Dewey Finn, un entusiasta del rock aficionado, astutamente asume el trabajo de maestro suplente de su amigo. Al no tener calificaciones para ello, en cambio comienza a entrenar a los estudiantes para formar una banda.',
+    genero: 'sentirse-bien',
     maturity: '12',
     slug: 'school-of-rock',
   });
@@ -250,75 +251,75 @@ export function seedDatabase(firebase) {
   // Drama
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'The Prestige',
+    title: 'El Gran Truco',
     description:
-      'Two friends and fellow magicians become bitter enemies after a sudden tragedy. As they devote themselves to this rivalry, they make sacrifices that bring them fame but with terrible consequences.',
-    genre: 'drama',
+      'Dos amigos y compañeros magos se convierten en enemigos acérrimos después de una tragedia repentina. Al dedicarse a esta rivalidad, hacen sacrificios que les dan fama pero con terribles consecuencias.',
+    genero: 'drama',
     maturity: '15',
     slug: 'the-prestige',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Fight Club',
+    title: 'El Club de la Pelea',
     description:
-      'Discontented with his capitalistic lifestyle, a white-collared insomniac forms an underground fight club with Tyler, a careless soap salesman. The project soon spirals down into something sinister.',
-    genre: 'drama',
+      'Descontento con su estilo de vida capitalista, un insomne de cuello blanco forma un club de lucha clandestino con Tyler, un descuidado vendedor de jabón. El proyecto pronto se convierte en algo siniestro.',
+    genero: 'drama',
     maturity: '15',
     slug: 'fight-club',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Kings Speech',
+    title: 'El discurso del Rey',
     description:
-      'King George VI tries to overcome his stammering problem with the help of speech therapist Lionel Logue and makes himself worthy enough to lead his country through World War II.',
-    genre: 'drama',
+      'El rey Jorge VI intenta superar su problema de tartamudeo con la ayuda del logopeda Lionel Logue y se hace lo suficientemente digno para guiar a su país a través de la Segunda Guerra Mundial.',
+    genero: 'drama',
     maturity: '15',
     slug: 'kings-speech',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'The Revenant',
+    title: 'El Renacido',
     description:
-      'Hugh Glass, a legendary frontiersman, is severely injured in a bear attack and is abandoned by his hunting crew. He uses his skills to survive and take revenge on his companion, who betrayed him.',
-    genre: 'drama',
+      'Hugh Glass, un legendario hombre de la frontera, resulta gravemente herido en el ataque de un oso y es abandonado por su equipo de caza. Utiliza sus habilidades para sobrevivir y vengarse de su compañero, que lo traicionó.',
+    genero: 'drama',
     maturity: '15',
     slug: 'the-revenant',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'The Social Network',
+    title: 'Red Social',
     description:
-      'Mark Zuckerberg creates a social networking site, Facebook, with the help of his friend Eduardo Saverin. But soon, a string of lies tears their relationship apart even as Facebook connects people.',
-    genre: 'drama',
+      'Mark Zuckerberg crea un sitio de redes sociales, Facebook, con la ayuda de su amigo Eduardo Saverin. Pero pronto, una serie de mentiras destroza su relación incluso cuando Facebook conecta a las personas.',
+    genero: 'drama',
     maturity: '12',
     slug: 'the-social-network',
   });
 
-  // Suspenso
+  // Thriller
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Shutter Island',
+    title: 'La Isla Siniestra',
     description:
-      'Teddy Daniels and Chuck Aule, two US marshals, are sent to an asylum on a remote island in order to investigate the disappearance of a patient, where Teddy uncovers a shocking truth about the place.',
-    genre: 'suspense',
+      'Teddy Daniels y Chuck Aule, dos alguaciles estadounidenses, son enviados a un asilo en una isla remota para investigar la desaparición de un paciente, donde Teddy descubre una verdad impactante sobre el lugar.',
+    genero: 'thriller',
     maturity: '15',
     slug: 'shutter-island',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Gone Girl',
+    title: 'Perdida',
     description:
-      'Nick Dunne discovers that the entire media focus has shifted on him when his wife Amy Dunne disappears on the day of their fifth wedding anniversary.',
-    genre: 'suspense',
+      'Nick Dunne descubre que todo el enfoque de los medios se ha centrado en él cuando su esposa Amy Dunne desaparece el día de su quinto aniversario de bodas.',
+    genero: 'thriller',
     maturity: '15',
     slug: 'gone-girl',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Prisoners',
+    title: 'La Sospecha',
     description:
-      "When the police take time to find Keller Dover's daughter and her friend, he decides to go on a search himself. His desperation leads him closer to finding the truth and also jeopardises his own life.",
-    genre: 'suspense',
+      'Cuando la policía se toma un tiempo para encontrar a la hija de Keller Dover y a su amiga, él decide ir él mismo a buscar. Su desesperación lo lleva más cerca de encontrar la verdad y también pone en peligro su propia vida.',
+    genero: 'thriller',
     maturity: '15',
     slug: 'prisoners',
   });
@@ -326,17 +327,17 @@ export function seedDatabase(firebase) {
     id: getUUID(),
     title: 'Seven',
     description:
-      'A serial killer begins murdering people according to the seven deadly sins. Two detectives, one new to the city and the other about to retire, are tasked with apprehending the criminal.',
-    genre: 'suspense',
+      'Un asesino en serie comienza a asesinar a personas de acuerdo con los siete pecados capitales. Dos detectives, uno nuevo en la ciudad y el otro a punto de jubilarse, tienen la tarea de detener al criminal.',
+    genero: 'thriller',
     maturity: '15',
     slug: 'seven',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Zodiac',
+    title: 'Zodiaco',
     description:
-      'Robert Graysmith, a cartoonist by profession, finds himself obsessively thinking about the Zodiac killer. He uses his puzzle-solving abilities to get closer to revealing the identity of the killer.',
-    genre: 'suspense',
+      'Robert Graysmith, caricaturista de profesión, se encuentra pensando obsesivamente en el asesino del Zodíaco. Utiliza sus habilidades para resolver acertijos para acercarse a revelar la identidad del asesino.',
+    genero: 'thriller',
     maturity: '15',
     slug: 'zodiac',
   });
@@ -346,17 +347,17 @@ export function seedDatabase(firebase) {
     id: getUUID(),
     title: 'Hotel Transylvania',
     description:
-      'Dracula, who owns a high-end resort for monsters, attempts to keep his daughter from falling in love with Jonathan, a human.',
-    genre: 'children',
+      'Drácula, dueño de un resort de lujo para monstruos, intenta evitar que su hija se enamore de Jonathan, un humano.',
+    genero: 'infantiles',
     maturity: '0',
     slug: 'hotel-transylvania',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Despicable Me',
+    title: 'Mi Villano Favorito',
     description:
-      'Gru, a criminal mastermind, adopts three orphans as pawns to carry out the biggest heist in history. His life takes an unexpected turn when the little girls see him as their potential father.',
-    genre: 'children',
+      'Gru, un genio criminal, adopta a tres huérfanos como peones para llevar a cabo el mayor atraco de la historia. Su vida da un giro inesperado cuando las niñas lo ven como su padre potencial.',
+    genero: 'infantiles',
     maturity: '0',
     slug: 'despicable-me',
   });
@@ -364,17 +365,17 @@ export function seedDatabase(firebase) {
     id: getUUID(),
     title: 'Frozen',
     description:
-      'Anna sets out on a journey with an iceman, Kristoff, and his reindeer, Sven, in order to find her sister, Elsa, who has the power to convert any object or person into ice.',
-    genre: 'children',
+      'Anna emprende un viaje con un hombre de hielo, Kristoff, y su reno, Sven, para encontrar a su hermana, Elsa, que tiene el poder de convertir cualquier objeto o persona en hielo.',
+    genero: 'infantiles',
     maturity: '0',
     slug: 'frozen',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Spirited Away',
+    title: 'El viaje de Chihiro',
     description:
-      'In this animated feature by noted Japanese director Hayao Miyazaki, 10-year-old Chihiro (Rumi Hiiragi) and her parents (Takashi Naitô, Yasuko Sawaguchi) stumble upon a seemingly abandoned amusement park.',
-    genre: 'children',
+      'En esta película animada del destacado director japonés Hayao Miyazaki, Chihiro (Rumi Hiiragi) de 10 años y sus padres (Takashi Naitô, Yasuko Sawaguchi) se topan con un parque de atracciones aparentemente abandonado.',
+    genero: 'infantiles',
     maturity: '0',
     slug: 'spirited-away',
   });
@@ -382,55 +383,55 @@ export function seedDatabase(firebase) {
     id: getUUID(),
     title: 'Up',
     description:
-      "Carl, an old widower, goes off on an adventure in his flying house in search of Paradise Falls, his wife's dream destination.",
-    genre: 'children',
+      'Carl, un anciano viudo, emprende una aventura en su casa voladora en busca de Paradise Falls, el destino soñado de su esposa.',
+    genero: 'infantiles',
     maturity: '0',
     slug: 'up',
   });
 
-  // Suspenso
+  // suspenso
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Joker',
+    title: 'Guasón',
     description:
-      'Forever alone in a crowd, failed comedian Arthur Fleck seeks connection as he walks the streets of Gotham City.',
-    genre: 'thriller',
+      'Siempre solo entre una multitud, el fracasado comediante Arthur Fleck busca la conexión mientras camina por las calles de Gotham City.',
+    genero: 'suspenso',
     maturity: '15',
     slug: 'joker',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'A Quiet Place',
+    title: 'Un Lugar en silencio',
     description:
-      'The Abbott family must now face the terrors of the outside world as they fight for survival in silence. Forced to venture into the unknown, they realize that the creatures that hunt by sound are not the only threats that lurk beyond the sand path.',
-    genre: 'thriller',
+      'La familia Abbott ahora debe enfrentar los terrores del mundo exterior mientras luchan por sobrevivir en silencio. Obligados a aventurarse en lo desconocido, se dan cuenta de que las criaturas que cazan por el sonido no son las únicas amenazas que acechan más allá del camino de arena.',
+    genero: 'suspenso',
     maturity: '15',
     slug: 'a-quiet-place',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Black Swan',
+    title: 'El Cisne Negro',
     description:
-      'Nina, a ballerina, gets the chance to play the White Swan, Princess Odette. But she finds herself slipping into madness when Thomas, the artistic director, decides that Lily might fit the role better.',
-    genre: 'thriller',
+      'Nina, una bailarina, tiene la oportunidad de interpretar al cisne blanco, la princesa Odette. Pero se encuentra cayendo en la locura cuando Thomas, el director artístico, decide que Lily podría encajar mejor en el papel.',
+    genero: 'suspenso',
     maturity: '15',
     slug: 'black-swan',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Nightcrawler',
+    title: 'Primicia mortal',
     description:
-      'Louis Bloom, a petty thief, realises that he can make money by capturing photographs of criminal activities and starts resorting to extreme tactics to get them.',
-    genre: 'thriller',
+      'Louis Bloom, un pequeño ladrón, se da cuenta de que puede ganar dinero capturando fotografías de actividades delictivas y comienza a recurrir a tácticas extremas para conseguirlas.',
+    genero: 'suspenso',
     maturity: '15',
     slug: 'nightcrawler',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'The Silence of The Lambs',
+    title: 'El silencio de los inocentes',
     description:
-      'Clarice Starling, an FBI agent, seeks help from Hannibal Lecter, a psychopathic serial killer and former psychiatrist, in order to apprehend another serial killer who has been claiming female victims.',
-    genre: 'thriller',
+      'Clarice Starling, una agente del FBI, busca la ayuda de Hannibal Lecter, un asesino en serie psicópata y ex psiquiatra, para detener a otro asesino en serie que ha estado reclamando víctimas femeninas.',
+    genero: 'suspenso',
     maturity: '15',
     slug: 'the-silence-of-the-lambs',
   });
@@ -438,19 +439,19 @@ export function seedDatabase(firebase) {
   // Romance
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'A Star Is Born',
+    title: 'Nace una estrella',
     description:
-      'After falling in love with struggling artist Ally, Jackson, a musician, coaxes her to follow her dreams, while he battles with alcoholism and his personal demons.',
-    genre: 'romance',
+      'Después de enamorarse de la artista en apuros Ally, Jackson, un músico, la convence para que siga sus sueños, mientras él lucha contra el alcoholismo y sus demonios personales.',
+    genero: 'romance',
     maturity: '15',
     slug: 'a-star-is-born',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'Blue Valentine',
+    title: 'Triste San Valentin',
     description:
-      'Dean and Cynthia are married with a daughter and their marriage is about to fall apart. Both come from dysfunctional families and struggle to make sense of their relationship.',
-    genre: 'romance',
+      'Dean y Cynthia están casados y tienen una hija y su matrimonio está a punto de desmoronarse. Ambos provienen de familias disfuncionales y luchan por darle sentido a su relación.',
+    genero: 'romance',
     maturity: '15',
     slug: 'blue-valentine',
   });
@@ -458,17 +459,17 @@ export function seedDatabase(firebase) {
     id: getUUID(),
     title: 'La La Land',
     description:
-      'Sebastian (Ryan Gosling) and Mia (Emma Stone) are drawn together by their common desire to do what they love. But as success mounts they are faced with decisions that begin...',
-    genre: 'romance',
+      'Sebastian (Ryan Gosling) y Mia (Emma Stone) se sienten atraídos por su deseo común de hacer lo que aman. Pero a medida que aumenta el éxito, se enfrentan a decisiones que comienzan ...',
+    genero: 'romance',
     maturity: '15',
     slug: 'la-la-land',
   });
   firebase.firestore().collection('films').add({
     id: getUUID(),
-    title: 'The Notebook',
+    title: 'Diario de una pasión',
     description:
-      "Duke reads the story of Allie and Noah, two lovers who were separated by fate, to Ms Hamilton, an old woman who suffers from Alzheimer's, on a daily basis out of his notebook.",
-    genre: 'romance',
+      'Duke lee la historia de Allie y Noah, dos amantes que fueron separados por el destino, a la Sra. Hamilton, una anciana que sufre de Alzheimer, a diario en su cuaderno.',
+    genero: 'romance',
     maturity: '15',
     slug: 'the-notebook',
   });
@@ -476,8 +477,8 @@ export function seedDatabase(firebase) {
     id: getUUID(),
     title: 'Titanic',
     description:
-      'Seventeen-year-old Rose hails from an aristocratic family and is set to be married. When she boards the Titanic, she meets Jack Dawson, an artist, and falls in love with him.',
-    genre: 'romance',
+      'Rose, de diecisiete años, proviene de una familia aristocrática y está lista para casarse. Cuando sube al Titanic, conoce a Jack Dawson, un artista, y se enamora de él.',
+    genero: 'romance',
     maturity: '15',
     slug: 'titanic',
   });

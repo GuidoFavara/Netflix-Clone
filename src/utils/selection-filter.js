@@ -1,47 +1,48 @@
-export default function selectionFilter({ series, films }) {
+// eslint-disable-next-line no-unused-vars
+export default function selectionFilter({ series, films } = []) {
   return {
     series: [
       {
         title: 'Documentales',
-        data: series.filter((item) => item.genre === 'documentaries'),
+        data: series.filter((item) => item.genero === 'documentales'),
       },
       {
         title: 'Comedias',
-        data: series.filter((item) => item.genre === 'comedies'),
+        data: series.filter((item) => item.genero === 'comedias'),
       },
       {
         title: 'Infantiles',
-        data: series.filter((item) => item.genre === 'children'),
+        data: series.filter((item) => item.genero === 'infantiles'),
       },
       {
         title: 'Crimen',
-        data: series.filter((item) => item.genre === 'crime'),
+        data: series.filter((item) => item.genero === 'crimen'),
       },
       {
         title: 'Sentirse bien',
-        data: series.filter((item) => item.genre === 'feel-good'),
+        data: series.filter((item) => item.genero === 'sentirse-bien'),
       },
     ],
     films: [
       {
         title: 'Drama',
-        data: series.filter((item) => item.genre === 'drama'),
+        data: series.filter((item) => item.genero === 'drama'),
       },
       {
         title: 'Suspenso',
-        data: series.filter((item) => item.genre === 'thriller'),
+        data: series.filter((item) => item.genero === 'suspenso'),
       },
       {
         title: 'Infantiles',
-        data: series.filter((item) => item.genre === 'children'),
+        data: series.filter((item) => item.genero === 'infantiles'),
       },
       {
-        title: 'Suspenso',
-        data: series.filter((item) => item.genre === 'suspense'),
+        title: 'Thriller',
+        data: series.filter((item) => item.genero === 'thriller'),
       },
       {
         title: 'Romance',
-        data: series.filter((item) => item.genre === 'romance'),
+        data: series.filter((item) => item.genero === 'romance'),
       },
     ],
   };
