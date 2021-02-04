@@ -1,5 +1,6 @@
 /* eslint-disable prettier/prettier */
 import React, { useState, useContext, useEffect } from 'react';
+import Fuse from 'fuse.js';
 import { SelectProfileContainer } from './profiles';
 import { FirebaseContext } from '../context/firebase';
 import { Card, Header, Loading, Player } from '../components';
@@ -18,7 +19,6 @@ export function BrowseContainer({ slides }) {
   const user = firebase.auth().currentUser || {};
 
   useEffect(() => {
-    console.log('profile', profile);
     setTimeout(() => {
       setLoading(false);
     }, 3000);
@@ -27,6 +27,17 @@ export function BrowseContainer({ slides }) {
   useEffect(() => {
     setSlideRows(slides[category]);
   }, [slides, category]);
+
+  useEffect(() => {
+    const fuse = new Fuse(slideRows, { keys: ['data.description', 'data.title', 'data.genre'] });
+    const results = fuse.search(searchTerm).map(({ item }) => item);
+
+    if (slideRows.length > 0 && searchTerm.length > 3 && results.length > 0) {
+      setSlideRows(results);
+    } else {
+      setSlideRows(slides[category]);
+    }
+  }, [searchTerm]);
 
   return profile.displayName ? (
     <>
@@ -70,8 +81,10 @@ export function BrowseContainer({ slides }) {
           </Header.Group>
         </Header.Frame>
         <Header.Feature>
-          <Header.FeatureCallOut>Ver Joker Ahora</Header.FeatureCallOut>
-          <Header.Text>descripcion de la pelicula</Header.Text>
+          <Header.FeatureCallOut>Ver El Guasón Ahora</Header.FeatureCallOut>
+          <Header.Text>Siempre solo en medio de la multitud, el fracasado comediante Arthur Fleck busca una conexión mientras camina por las calles de Gotham
+             Ciudad. Arthur usa dos máscaras: la que pinta para su trabajo diario como payaso y la apariencia que proyecta en un
+             intento inútil de sentirse parte del mundo que lo rodea.</Header.Text>
           <Header.PlayButton>Ver</Header.PlayButton>
         </Header.Feature>
       </Header>
