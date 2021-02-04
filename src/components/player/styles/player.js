@@ -20,7 +20,6 @@ export const Inner = styled.div`
   width: 100%;
   max-width: 900px;
   margin: auto;
-
   video {
     height: 100%;
     width: 100%;
@@ -37,11 +36,9 @@ export const Close = styled.button`
   background-color: transparent;
   border: 0;
   cursor: pointer;
-
   &:hover {
     opacity: 1;
   }
-
   &:before,
   &:after {
     position: absolute;
@@ -52,7 +49,6 @@ export const Close = styled.button`
     width: 2px;
     background-color: #333;
   }
-
   &:before {
     transform: rotate(45deg);
   }
@@ -76,7 +72,6 @@ export const Button = styled.button`
   align-items: center;
   justify-content: center;
   padding-left: 0;
-
   &:hover {
     transform: scale(1.05);
     background-color: #ff0a16;

@@ -25,6 +25,7 @@ Estoy desarrollandolo, todavia no esta listo.
 - [x] SignUp
 - [x] Auth
 - [ ] Display Movies
+- [ ] Tester
 - [ ] Debug
 - [ ] Deploy
 - [ ] Conseguir un trabajo
