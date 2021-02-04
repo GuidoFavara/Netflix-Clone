@@ -1,4 +1,4 @@
-/* eslint-disable prettier/prettier */
+/* eslint-disable no-shadow */
 import React, { useState } from 'react';
 import { Link as ReachRouterLink } from 'react-router-dom';
 import {
@@ -8,16 +8,16 @@ import {
   Dropdown,
   Picture,
   Link,
+  Search,
   Profile,
   FeatureCallOut,
+  SearchIcon,
+  SearchInput,
   ButtonLink,
   PlayButton,
   Text,
   Feature,
   Logo,
-  Search,
-  SearchIcon,
-  SearchInput,
 } from './styles/header';
 
 export default function Header({ bg = true, children, ...restProps }) {
@@ -46,32 +46,12 @@ Header.Logo = function HeaderLogo({ to, ...restProps }) {
   );
 };
 
-Header.Profile = function HeaderProfile({ children, ...restProps }) {
-  return <Profile {...restProps}>{children}</Profile>;
-};
-
-Header.Feature = function HeaderFeature({ children, ...restProps }) {
-  return <Feature>{children}</Feature>;
-};
-
-Header.Picture = function HeaderPicture({ src, ...restProps }) {
-  return <Picture {...restProps} src={`/images/users/${src}.png`} />;
-};
-
-Header.Search = function HeaderSearch({
-  searchTerm,
-  setSearchTerm,
-  ...restProps
-}) {
+Header.Search = function HeaderSearch({ searchTerm, setSearchTerm, ...restProps }) {
   const [searchActive, setSearchActive] = useState(false);
 
   return (
     <Search {...restProps}>
-      <SearchIcon
-        // eslint-disable-next-line no-shadow
-        onClick={() => setSearchActive((searchActive) => !searchActive)}
-        data-testid="search-click"
-      >
+      <SearchIcon onClick={() => setSearchActive((searchActive) => !searchActive)} data-testid="search-click">
         <img src="/images/icons/search.png" alt="Search" />
       </SearchIcon>
       <SearchInput
@@ -83,6 +63,19 @@ Header.Search = function HeaderSearch({
       />
     </Search>
   );
+};
+
+Header.Profile = function HeaderProfile({ children, ...restProps }) {
+  return <Profile {...restProps}>{children}</Profile>;
+};
+
+// eslint-disable-next-line no-unused-vars
+Header.Feature = function HeaderFeature({ children, ...restProps }) {
+  return <Feature>{children}</Feature>;
+};
+
+Header.Picture = function HeaderPicture({ src, ...restProps }) {
+  return <Picture {...restProps} src={`/images/users/${src}.png`} />;
 };
 
 Header.Dropdown = function HeaderDropdown({ children, ...restProps }) {
@@ -97,10 +90,7 @@ Header.PlayButton = function HeaderPlayButton({ children, ...restProps }) {
   return <PlayButton {...restProps}>{children}</PlayButton>;
 };
 
-Header.FeatureCallOut = function HeaderFeatureCallOut({
-  children,
-  ...restProps
-}) {
+Header.FeatureCallOut = function HeaderFeatureCallOut({ children, ...restProps }) {
   return <FeatureCallOut {...restProps}>{children}</FeatureCallOut>;
 };
 
