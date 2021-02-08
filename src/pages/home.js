@@ -18,7 +18,8 @@ export default function Home() {
           </OptForm.Text>
           <OptForm>
             <OptForm.Input placeholder="Email" />
-            <Link to="/signup">
+            <Link to="/signup" style={{ textDecoration: 'none' }}>
+              {/* buscaré una mejor forma */}
               <OptForm.Button>COMIENZA YA</OptForm.Button>
             </Link>
           </OptForm>
