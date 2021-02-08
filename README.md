@@ -24,6 +24,7 @@ Estoy desarrollandolo, todavia no esta listo.
 - [x] SignIn
 - [x] SignUp
 - [x] Auth
+- [x] Browser
 - [ ] Display Movies
 - [ ] Tester
 - [ ] Debug
