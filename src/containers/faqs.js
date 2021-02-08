@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Accordion } from '../components';
 import OptForm from '../components/opt-form';
 import faqsData from '../fixtures/faqs.json';
@@ -19,7 +20,9 @@ export function FaqsContainer() {
       </OptForm.Text>
       <OptForm>
         <OptForm.Input placeholder="Email" />
-        <OptForm.Button>COMIENZA YA</OptForm.Button>
+        <Link to="/signup">
+          <OptForm.Button>COMIENZA YA</OptForm.Button>
+        </Link>
       </OptForm>
     </Accordion>
   );

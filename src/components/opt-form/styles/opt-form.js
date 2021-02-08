@@ -66,3 +66,7 @@ export const Text = styled.p`
     line-height: 22px;
   }
 `;
+
+export const Link = styled.a`
+  text-decoration: none;
+`

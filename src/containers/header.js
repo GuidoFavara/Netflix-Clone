@@ -1,5 +1,3 @@
-/* eslint-disable prettier/prettier */
-/* eslint-disable import/no-unresolved */
 import React from 'react';
 import { Header } from '../components';
 import * as ROUTES from '../constants/routes';
