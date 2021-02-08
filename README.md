@@ -1,6 +1,6 @@
 # Netflix
 
-<p align="center">A Netflix Clone very presice with Auth & Firebase backend</p>
+<p align="center">A Netflix Clone very presice with Auth & Firebase BackEnd</p>
 
 [Demo](https://guido-net.netlify.app)
 
