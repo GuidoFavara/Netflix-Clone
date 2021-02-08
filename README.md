@@ -25,10 +25,10 @@ Estoy desarrollandolo, todavia no esta listo.
 - [x] SignUp
 - [x] Auth
 - [x] Browser
-- [ ] Display Movies
+- [x] Display Movies
+- [x] Deploy
 - [ ] Tester
 - [ ] Debug
-- [ ] Deploy
 - [ ] Conseguir un trabajo
 
 ## 🛠️ Technologies
