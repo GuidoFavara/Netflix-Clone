@@ -12,7 +12,7 @@ Almost done
 
 One of my biggest proyect so far
 
-Estoy desarrollandolo, todavia no esta listo. 
+Estoy desarrollandolo, faltan los tests y un bug menor al seleccionar perfil no aparece la imagen
 
 ## 🚧 Roadmap
 
