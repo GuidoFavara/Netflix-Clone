@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-unused-vars
 export default function selectionFilter({ series, films } = []) {
   return {
     series: [
@@ -26,23 +25,23 @@ export default function selectionFilter({ series, films } = []) {
     films: [
       {
         title: 'Drama',
-        data: series.filter((item) => item.genero === 'drama'),
+        data: films.filter((item) => item.genero === 'drama'),
       },
       {
         title: 'Suspenso',
-        data: series.filter((item) => item.genero === 'suspenso'),
+        data: films.filter((item) => item.genero === 'suspenso'),
       },
       {
         title: 'Infantiles',
-        data: series.filter((item) => item.genero === 'infantiles'),
+        data: films.filter((item) => item.genero === 'infantiles'),
       },
       {
         title: 'Thriller',
-        data: series.filter((item) => item.genero === 'thriller'),
+        data: films.filter((item) => item.genero === 'thriller'),
       },
       {
+        data: films.filter((item) => item.genero === 'romance'),
         title: 'Romance',
-        data: series.filter((item) => item.genero === 'romance'),
       },
     ],
   };

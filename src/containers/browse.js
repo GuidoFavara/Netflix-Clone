@@ -1,4 +1,3 @@
-/* eslint-disable prettier/prettier */
 import React, { useState, useContext, useEffect } from 'react';
 import Fuse from 'fuse.js';
 import { SelectProfileContainer } from './profiles';
@@ -6,7 +5,7 @@ import { FirebaseContext } from '../context/firebase';
 import { Card, Header, Loading, Player } from '../components';
 import * as ROUTES from '../constants/routes';
 import logo from '../logo.svg';
-import {FooterContainer} from './footer';
+import { FooterContainer } from './footer';
 
 export function BrowseContainer({ slides }) {
   const [category, setCategory] = useState('series');
@@ -46,24 +45,15 @@ export function BrowseContainer({ slides }) {
         <Header.Frame>
           <Header.Group>
             <Header.Logo to={ROUTES.HOME} src={logo} alt="Netflix" />
-            <Header.TextLink
-              active={category === 'series' ? 'true' : 'false'}
-              onClick={() => setCategory('series')}
-            >
+            <Header.TextLink active={category === 'series' ? 'true' : 'false'} onClick={() => setCategory('series')}>
               Series
             </Header.TextLink>
-            <Header.TextLink
-              active={category === 'films' ? 'true' : 'false'}
-              onClick={() => setCategory('films')}
-            >
+            <Header.TextLink active={category === 'films' ? 'true' : 'false'} onClick={() => setCategory('films')}>
               Películas
             </Header.TextLink>
           </Header.Group>
           <Header.Group>
-            <Header.Search
-              searchTerm={searchTerm}
-              setSearchTerm={setSearchTerm}
-            />
+            <Header.Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
             <Header.Profile>
               <Header.Picture src={user.photoURL} />
               <Header.Dropdown>
@@ -72,9 +62,7 @@ export function BrowseContainer({ slides }) {
                   <Header.TextLink>{user.displayName}</Header.TextLink>
                 </Header.Group>
                 <Header.Group>
-                  <Header.TextLink onClick={() => firebase.auth().signOut()}>
-                    Salir
-                  </Header.TextLink>
+                  <Header.TextLink onClick={() => firebase.auth().signOut()}>Salir</Header.TextLink>
                 </Header.Group>
               </Header.Dropdown>
             </Header.Profile>
@@ -82,9 +70,11 @@ export function BrowseContainer({ slides }) {
         </Header.Frame>
         <Header.Feature>
           <Header.FeatureCallOut>Ver El Guasón Ahora</Header.FeatureCallOut>
-          <Header.Text>Siempre solo en medio de la multitud, el fracasado comediante Arthur Fleck busca una conexión mientras camina por las calles de Gotham
-             Ciudad. Arthur usa dos máscaras: la que pinta para su trabajo diario como payaso y la apariencia que proyecta en un
-             intento inútil de sentirse parte del mundo que lo rodea.</Header.Text>
+          <Header.Text>
+            Siempre solo en medio de la multitud, el fracasado comediante Arthur Fleck busca una conexión mientras
+            camina por las calles de Gotham Ciudad. Arthur usa dos máscaras: la que pinta para su trabajo diario como
+            payaso y la apariencia que proyecta en un intento inútil de sentirse parte del mundo que lo rodea.
+          </Header.Text>
           <Header.PlayButton>Ver</Header.PlayButton>
         </Header.Feature>
       </Header>
@@ -96,9 +86,7 @@ export function BrowseContainer({ slides }) {
             <Card.Entities>
               {slideItem.data.map((item) => (
                 <Card.Item key={item.docId} item={item}>
-                  <Card.Image
-                    src={`/images/${category}/${item.genero}/${item.slug}/small.jpg`}
-                  />
+                  <Card.Image src={`/images/${category}/${item.genero}/${item.slug}/small.jpg`} />
                   <Card.Meta>
                     <Card.SubTitle>{item.title}</Card.SubTitle>
                     <Card.Text>{item.description}</Card.Text>

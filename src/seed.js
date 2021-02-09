@@ -295,13 +295,13 @@ export function seedDatabase(firebase) {
     slug: 'the-social-network',
   });
 
-  // Thriller
+  // Suspenso
   firebase.firestore().collection('films').add({
     id: getUUID(),
     title: 'La Isla Siniestra',
     description:
       'Teddy Daniels y Chuck Aule, dos alguaciles estadounidenses, son enviados a un asilo en una isla remota para investigar la desaparición de un paciente, donde Teddy descubre una verdad impactante sobre el lugar.',
-    genero: 'thriller',
+    genero: 'suspenso',
     maturity: '15',
     slug: 'shutter-island',
   });
@@ -310,7 +310,7 @@ export function seedDatabase(firebase) {
     title: 'Perdida',
     description:
       'Nick Dunne descubre que todo el enfoque de los medios se ha centrado en él cuando su esposa Amy Dunne desaparece el día de su quinto aniversario de bodas.',
-    genero: 'thriller',
+    genero: 'suspenso',
     maturity: '15',
     slug: 'gone-girl',
   });
@@ -319,7 +319,7 @@ export function seedDatabase(firebase) {
     title: 'La Sospecha',
     description:
       'Cuando la policía se toma un tiempo para encontrar a la hija de Keller Dover y a su amiga, él decide ir él mismo a buscar. Su desesperación lo lleva más cerca de encontrar la verdad y también pone en peligro su propia vida.',
-    genero: 'thriller',
+    genero: 'suspenso',
     maturity: '15',
     slug: 'prisoners',
   });
@@ -328,7 +328,7 @@ export function seedDatabase(firebase) {
     title: 'Seven',
     description:
       'Un asesino en serie comienza a asesinar a personas de acuerdo con los siete pecados capitales. Dos detectives, uno nuevo en la ciudad y el otro a punto de jubilarse, tienen la tarea de detener al criminal.',
-    genero: 'thriller',
+    genero: 'suspenso',
     maturity: '15',
     slug: 'seven',
   });
@@ -337,7 +337,7 @@ export function seedDatabase(firebase) {
     title: 'Zodiaco',
     description:
       'Robert Graysmith, caricaturista de profesión, se encuentra pensando obsesivamente en el asesino del Zodíaco. Utiliza sus habilidades para resolver acertijos para acercarse a revelar la identidad del asesino.',
-    genero: 'thriller',
+    genero: 'suspenso',
     maturity: '15',
     slug: 'zodiac',
   });
@@ -389,13 +389,13 @@ export function seedDatabase(firebase) {
     slug: 'up',
   });
 
-  // suspenso
+  // Thriller
   firebase.firestore().collection('films').add({
     id: getUUID(),
     title: 'Guasón',
     description:
       'Siempre solo entre una multitud, el fracasado comediante Arthur Fleck busca la conexión mientras camina por las calles de Gotham City.',
-    genero: 'suspenso',
+    genero: 'thriller',
     maturity: '15',
     slug: 'joker',
   });
@@ -404,7 +404,7 @@ export function seedDatabase(firebase) {
     title: 'Un Lugar en silencio',
     description:
       'La familia Abbott ahora debe enfrentar los terrores del mundo exterior mientras luchan por sobrevivir en silencio. Obligados a aventurarse en lo desconocido, se dan cuenta de que las criaturas que cazan por el sonido no son las únicas amenazas que acechan más allá del camino de arena.',
-    genero: 'suspenso',
+    genero: 'thriller',
     maturity: '15',
     slug: 'a-quiet-place',
   });
@@ -413,7 +413,7 @@ export function seedDatabase(firebase) {
     title: 'El Cisne Negro',
     description:
       'Nina, una bailarina, tiene la oportunidad de interpretar al cisne blanco, la princesa Odette. Pero se encuentra cayendo en la locura cuando Thomas, el director artístico, decide que Lily podría encajar mejor en el papel.',
-    genero: 'suspenso',
+    genero: 'thriller',
     maturity: '15',
     slug: 'black-swan',
   });
@@ -422,7 +422,7 @@ export function seedDatabase(firebase) {
     title: 'Primicia mortal',
     description:
       'Louis Bloom, un pequeño ladrón, se da cuenta de que puede ganar dinero capturando fotografías de actividades delictivas y comienza a recurrir a tácticas extremas para conseguirlas.',
-    genero: 'suspenso',
+    genero: 'thriller',
     maturity: '15',
     slug: 'nightcrawler',
   });
@@ -431,7 +431,7 @@ export function seedDatabase(firebase) {
     title: 'El silencio de los inocentes',
     description:
       'Clarice Starling, una agente del FBI, busca la ayuda de Hannibal Lecter, un asesino en serie psicópata y ex psiquiatra, para detener a otro asesino en serie que ha estado reclamando víctimas femeninas.',
-    genero: 'suspenso',
+    genero: 'thriller',
     maturity: '15',
     slug: 'the-silence-of-the-lambs',
   });
