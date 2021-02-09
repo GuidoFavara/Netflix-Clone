@@ -13,15 +13,10 @@ export function SelectProfileContainer({ user, setProfile }) {
       </Header>
 
       <Profiles>
-        <Profiles.Title>Quién esta mirando?</Profiles.Title>
+        <Profiles.Title>Quién está mirando?</Profiles.Title>
         <Profiles.List>
           <Profiles.User
-            onClick={() =>
-              setProfile({
-                displayName: user.displayName,
-                photoURL: user.photoURL,
-              })
-            }
+            onClick={() => setProfile({ displayName: user.displayName, photoURL: user.photoURL })}
             data-testid="user-profile"
           >
             <Profiles.Picture src={user.photoURL} />
